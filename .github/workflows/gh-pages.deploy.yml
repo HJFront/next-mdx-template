@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /GotaBit-website
+      NEXT_PUBLIC_BASE_PATH: /next-mdx-template
 
     strategy:
       matrix:
