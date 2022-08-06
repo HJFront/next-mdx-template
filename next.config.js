@@ -11,9 +11,14 @@ const withMDX = require('@next/mdx')({
 })
 
 module.exports = withMDX({
+  reactStrictMode: true,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
-  reactStrictMode: true,
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
   swcMinify: true,
   // Append the default value with md extensions
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
