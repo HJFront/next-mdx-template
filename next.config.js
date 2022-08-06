@@ -11,6 +11,8 @@ const withMDX = require('@next/mdx')({
 })
 
 module.exports = withMDX({
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   reactStrictMode: true,
   swcMinify: true,
   // Append the default value with md extensions
